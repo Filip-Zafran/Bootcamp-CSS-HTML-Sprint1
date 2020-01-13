@@ -6,9 +6,196 @@
  * Made By MaterializeCSS.com
  */
 
+/* html {
+   font-family: "Indie Flower",
+   "Loved by the King",
+   cursive;
+} */
+
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
+
+.navbar-light a:hover {
+  background-color: #aaa4a4;
+}
+
+.logo {
+  height: 70px;
+}
+
+.emailPic {
+  height: 25px;
+}
+
+h1 {
+  font-size: 35px;
+  margin: 30px;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 45px;
+}
+
+h2 {
+  margin: 30px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: normal;
+  padding-top: 0px;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 20px;
+}
+
+#myBtn {
+  margin-left: 30px;
+  color: blue;
+  font-style: italic;
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  margin-left: 15px;
+  display: block;
+  /* text-align: right;
+  float: left; */
+}
+
+.eMail {
+  text-decoration: none;
+}
+
+/* READ MORE */
+#more {
+  display: none;
+}
+
+.header {
+  display: grid;
+  justify-content: space-evenly;
+  margin: 30px;
+  grid-template-columns: 20% 50% 30%;
+  vertical-align: middle;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 20px;
+}
+
+.innerHeader2 {
+  display: inline;
+  text-align: right;
+  /* align-content: flex-end;
+  align-items: center; */
+  opacity: 0.6;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 20px;
+}
+
+.magnyfingGlass {
+  display: inline;
+  flex-wrap: wrap;
+}
+
+nav {
+  color: rgb(106, 165, 253);
+  background-color: rgb(216, 215, 215);
+  border-radius: 2px;
+  border-style: solid;
+  border-color: black;
+  margin: 30px;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 30px;
+}
+
+.nav-link:hover {
+  background-color: rgb(161, 158, 158);
+}
+
+.footer {
+  display: grid;
+  margin: 30px;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  color: black;
+  background-color: rgb(216, 215, 215);
+  border-radius: 2px;
+  border-style: solid;
+  border-color: black;
+  height: 60px;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 20px;
+}
+
+.anchor {
+  opacity: 0.3;
+  color: rgb(106, 165, 253);
+  margin-right: 5px;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 20px;
+
+  text-align: end;
+}
+
+.p2 {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+  content: "Read more";
+  text-decoration: underline;
+  opacity: 0.8;
+  color: rgb(106, 165, 253);
+  margin-right: 5px;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 20px;
+  padding-left: 30px;
+  border: none !important;
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+  content: "Read less";
+  text-decoration: underline;
+  opacity: 0.8;
+  color: rgb(106, 165, 253);
+  margin-right: 5px;
+  font-family: "Indie Flower", "Loved by the King", cursive;
+  font-size: 20px;
+  padding-left: 30px;
+  border: none !important;
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
+  border-radius: 0.25em;
+}
+
+
+/* a:visited {
+  text-decoration: none;
+  decoration: none;
+} */
