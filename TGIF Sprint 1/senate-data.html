@@ -28,7 +28,6 @@
         <a class=eMail href="info@tgif.com">info@tgif.com</a>
     </div>
 </div>
-
 <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -39,46 +38,51 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#"><a href="home.html">Home</a><span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
             </li>
 
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><a href="congress113.html">Congress 113</a> <span
-                            class="sr-only">(current)</span></a>
-                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Congress 113
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><a href="senate-data.html">Senate</a></a>
+                    <a class="dropdown-item" href="#"><a href="house-data.html">House</a></a>
+                </div>
+            </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Attendance
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><a href="senate-data.html">Senate</a></a>
-                        <a class="dropdown-item" href="#"><a href="house-data.html">House</a></a>
-                    </div>
-                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Attendance
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><a href="senate-attendance.html">Senate</a></a>
+                    <a class="dropdown-item" href="#"><a href="house-attendance.html">House</a></a>
+                </div>
+            </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Party Loyality
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><a href="senate-data.html">Senate</a></a>
-                        <a class="dropdown-item" href="#"><a href="house-data.html">House</a></a>
-                    </div>
-                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Party Loyality
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><a href="senate-loyality.html">Senate</a></a>
+                    <a class="dropdown-item" href="#"><a href="house-loyality.html">House</a></a>
+                </div>
+            </li>
 
 
 
-            </ul>
+        </ul>
     </div>
 </nav>
 
 
 <table class="table table-borderless" style="text-align:center;">
-    <thead>
+    <thead class=tableFontBig>
         <th>Last Name, First Name, Middle Name</th>
         <th>Party</th>
         <th>State</th>
@@ -86,16 +90,14 @@
         <th>Votes With Party (%)</th>
     </thead>
 
-    <tbody id="senate-data"></tbody>
+    <tbody id="senate-data" class=tableFont></tbody>
 </table>
 
 <div class="footer">
     <div></div>
     <div class="p2">©2016 TGIF | all rights reserved</div>
-    <div>
-        <div class="anchor">
-            <i><a class="float-right" href=" #top">Go-2-Top</a></i>
-        </div>
+    <div class="anchor">
+        <i><a class="float-right align-middle" href=" #top">Go-2-Top</a></i>
     </div>
 </div>
 

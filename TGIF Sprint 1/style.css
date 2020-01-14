@@ -6,11 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
-/* html {
-   font-family: "Indie Flower",
-   "Loved by the King",
-   cursive;
-} */
+body {
+  font-family: "Indie Flower", "Loved by the King", cursive;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -35,7 +33,6 @@
 h1 {
   font-size: 35px;
   margin: 30px;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 45px;
 }
 
@@ -45,7 +42,6 @@ h2 {
   line-height: 1.5;
   font-weight: normal;
   padding-top: 0px;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 20px;
 }
 
@@ -57,12 +53,6 @@ h2 {
   border: none;
 }
 
-a {
-  margin-left: 15px;
-  display: block;
-  /* text-align: right;
-  float: left; */
-}
 
 .eMail {
   text-decoration: none;
@@ -79,17 +69,15 @@ a {
   margin: 30px;
   grid-template-columns: 20% 50% 30%;
   vertical-align: middle;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 20px;
 }
 
 .innerHeader2 {
-  display: inline;
+  display: flex;
+  flex-direction: row-reverse;
   text-align: right;
-  /* align-content: flex-end;
-  align-items: center; */
+  align-items: center;
   opacity: 0.6;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 20px;
 }
 
@@ -105,7 +93,6 @@ nav {
   border-style: solid;
   border-color: black;
   margin: 30px;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 30px;
 }
 
@@ -123,22 +110,30 @@ nav {
   border-style: solid;
   border-color: black;
   height: 60px;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 20px;
 }
 
 .anchor {
   opacity: 0.3;
   color: rgb(106, 165, 253);
-  margin-right: 5px;
-  font-family: "Indie Flower", "Loved by the King", cursive;
+  margin-right: 10px;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 
-  text-align: end;
+a {
+  margin-left: 4px;
+  display: block;
+  /* text-align: right;
+  float: left; */
 }
 
 .p2 {
-  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   opacity: 0.5;
   font-size: 20px;
 }
@@ -166,7 +161,6 @@ nav {
   opacity: 0.8;
   color: rgb(106, 165, 253);
   margin-right: 5px;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 20px;
   padding-left: 30px;
   border: none !important;
@@ -178,7 +172,6 @@ nav {
   opacity: 0.8;
   color: rgb(106, 165, 253);
   margin-right: 5px;
-  font-family: "Indie Flower", "Loved by the King", cursive;
   font-size: 20px;
   padding-left: 30px;
   border: none !important;
@@ -194,8 +187,28 @@ nav {
   border-radius: 0.25em;
 }
 
+.bigTable {
+  display: grid;
+  justify-content: space-evenly;
+  margin: 70px;
+  grid-template-columns: 50% 50%;
+}
 
-/* a:visited {
-  text-decoration: none;
-  decoration: none;
-} */
+.tableContent1 {
+  text-align: justify;
+  margin: 20px;
+  border-right: 40%;
+}
+
+.tableFont {
+  margin: 30px;
+  font-weight: normal;
+  padding-top: 0px;
+  font-size: 25px;
+}
+
+.tableFontBig {
+  font-size: 35px;
+  margin: 30px;
+  font-size: 35px;
+}
